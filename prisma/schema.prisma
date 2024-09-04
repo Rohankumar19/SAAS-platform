@@ -25,6 +25,11 @@ model Stream {
   type
 }
 
+enum StreamType {
+  Spotify
+  Youtube
+}
+
 enum Role {
   Streamer
   EndUser
