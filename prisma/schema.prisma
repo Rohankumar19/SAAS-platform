@@ -20,6 +20,10 @@ model User {
   role Role
 }
 
+model Stream {
+  id     String      @id @default(uuid())
+}
+
 enum Role {
   Streamer
   EndUser
