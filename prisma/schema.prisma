@@ -22,6 +22,7 @@ model User {
 
 model Stream {
   id     String      @id @default(uuid())
+  type
 }
 
 enum Role {
