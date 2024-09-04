@@ -22,7 +22,7 @@ model User {
 
 model Stream {
   id     String      @id @default(uuid())
-  type
+  type   StreamType
 }
 
 enum StreamType {
