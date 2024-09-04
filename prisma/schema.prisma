@@ -21,9 +21,10 @@ model User {
 }
 
 model Stream {
-  id     String      @id @default(uuid())
-  type   StreamType
-  active Boolean     @default(true)
+  id      String      @id @default(uuid())
+  type    StreamType
+  active  Boolean     @default(true)
+  upvotes Int
 }
 
 enum StreamType {
