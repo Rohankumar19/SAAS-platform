@@ -21,12 +21,12 @@ model User {
 }
 
 model Stream {
-  id      String      @id @default(uuid())
-  type    StreamType
-  active  Boolean     @default(true)
-  upvotes Int
-  userId  String
-  user    user        @relation(fields: [userId], references:[]) 
+  id        String      @id @default(uuid())
+  type      StreamType
+  active    Boolean     @default(true)
+  upvotes   Int
+  userId    String
+  user      user        @relation(fields: [userId], references:[id]) 
 }
 
 enum StreamType {
