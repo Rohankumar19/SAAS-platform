@@ -26,7 +26,7 @@ model Stream {
   active  Boolean     @default(true)
   upvotes Int
   userId  String
-  user    user
+  user    user        @relation(fields: [userId], ) 
 }
 
 enum StreamType {
