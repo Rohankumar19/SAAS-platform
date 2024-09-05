@@ -43,10 +43,7 @@ enum StreamType {
   Youtube
 }
 
-enum Role {
-  Streamer
-  EndUser
-}
+
 
 enum Provider {
   GOOGLE
