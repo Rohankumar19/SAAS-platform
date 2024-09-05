@@ -23,6 +23,9 @@ model User {
 
 model Upvote {
   id         String   
+  userId     String
+  streamId   String
+  user
 }
 
 model Stream {
