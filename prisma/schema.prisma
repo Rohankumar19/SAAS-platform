@@ -19,6 +19,7 @@ model User {
   provider Provider
   role     Role
   streams  Stream[]
+  upvotes  Upvote[]
 }
 
 model Upvote {
