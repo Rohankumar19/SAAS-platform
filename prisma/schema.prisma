@@ -27,6 +27,7 @@ model Upvote {
   streamId   String
   user       User        @relation(fields: [userId], references:[id])
   stream     Stream      @relation(fields: [StreamId], references:[id])
+  @@unique([userId, streamId])
 }
 
 model Stream {
