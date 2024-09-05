@@ -25,6 +25,8 @@ model Stream {
   type    StreamType
   active  Boolean     @default(true)
   upvotes Int
+  userId  String
+  user    user
 }
 
 enum StreamType {
