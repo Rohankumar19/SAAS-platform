@@ -21,6 +21,10 @@ model User {
   streams  Stream[]
 }
 
+model Upvote {
+  id         String   
+}
+
 model Stream {
   id        String      @id @default(uuid())
   type      StreamType
