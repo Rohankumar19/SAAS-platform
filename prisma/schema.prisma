@@ -25,7 +25,7 @@ model Upvote {
   id         String   
   userId     String
   streamId   String
-  user
+  user       User        @relation(fields: [userId], references:[id]) 
 }
 
 model Stream {
