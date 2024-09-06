@@ -43,7 +43,7 @@ enum StreamType {
   Spotify
   Youtube
 }
-
+  
 
 
 enum Provider {

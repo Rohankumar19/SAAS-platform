@@ -1,5 +1,6 @@
 import { NextRequest } from "next/server";
 
 export function POST(req: NextRequest){
-    const data = await
+    const data = await req.json();
+    
 }
