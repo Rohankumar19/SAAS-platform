@@ -11,7 +11,9 @@ export function POST(req: NextRequest){
         const data = await req.json();
     }catch(e){
         return NextResponse.json({
-            
+            message: "Error while adding a stream"
+        }, {
+            status: 411
         })
     }
 }
