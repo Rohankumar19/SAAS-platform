@@ -1,4 +1,4 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 
 const CreateStreamSchema = z.object({
@@ -7,6 +7,11 @@ const CreateStreamSchema = z.object({
 })
 
 export function POST(req: NextRequest){
-    const data = await req.json();
-    
+    try {
+        const data = await req.json();
+    }catch(e){
+        return NextResponse.json({
+            
+        })
+    }
 }
