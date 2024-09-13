@@ -1,4 +1,5 @@
 import { authOptions } from "@/lib/auth-options";
+import { randomInt } from "crypto";
 import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 
